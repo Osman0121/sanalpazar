@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Daily Shop | Home</title>
+    <title>Sanal Pazar | Anasayfa</title>
     
     <!-- Font awesome -->
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -67,12 +67,12 @@
               $_SESSION["durum"] = $x["onayDurumu"];
 
               if($_SESSION["durum"] == 1){
-                  header ("Location:kullanici_index.php");      
+                  header ("Location:kullanici/index.php");      
               }
 
               else {
                   echo '<div class="alert alert-danger">Üyeliğiniz Henüz Onaylanmadı</div>';
-                  header('Refresh: 2; url=index.php'); 
+                  header('Refresh: 2; url=../index.php'); 
                 }
             }
 
@@ -98,51 +98,11 @@
         <div class="row">
           <div class="col-md-12">
             <div class="aa-header-top-area">
-              <!-- start header top left -->
-              <div class="aa-header-top-left">
-                <!-- start language -->
-                <div class="aa-language">
-                  <div class="dropdown">
-                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <img src="img/flag/english.jpg" alt="english flag">ENGLISH
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#"><img src="img/flag/french.jpg" alt="">FRENCH</a></li>
-                      <li><a href="#"><img src="img/flag/english.jpg" alt="">ENGLISH</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- / language -->
-
-                <!-- start currency -->
-                <div class="aa-currency">
-                  <div class="dropdown">
-                    <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                      <i class="fa fa-usd"></i>USD
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#"><i class="fa fa-euro"></i>EURO</a></li>
-                      <li><a href="#"><i class="fa fa-jpy"></i>YEN</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <!-- / currency -->
-                <!-- start cellphone -->
-                <div class="cellphone hidden-xs">
-                  <p><span class="fa fa-phone"></span>00-62-658-658</p>
-                </div>
-                <!-- / cellphone -->
-              </div>
-              <!-- / header top left -->
+              
               <div class="aa-header-top-right">
                 <ul class="aa-head-top-nav-right">
-                  <li><a href="account.php">My Account</a></li>
-                  <li class="hidden-xs"><a href="wishlist.html">Wishlist</a></li>
-                  <li class="hidden-xs"><a href="cart.html">My Cart</a></li>
-                  <li class="hidden-xs"><a href="checkout.html">Checkout</a></li>
-                  <li><a href="" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                  <li><a href="account.php">Kayıt Ol</a></li>
+                  <li><a href="" data-toggle="modal" data-target="#login-modal">Giriş Yap</a></li>
                 </ul>
               </div>
             </div>
@@ -158,17 +118,17 @@
 	      <div class="modal-content">                      
 	        <div class="modal-body">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	          <h4>Login or Register</h4>
+	          <h4>Giriş Yap</h4>
 	          <form class="aa-login-form" action="" method="post">
-	            <label for="">kullaniciMail<span>*</span></label>
-                <input type="text" name="kullaniciMail" placeholder="Username or email">             
-                <label for="">Password<span>*</span></label>
-                <input type="password" name="kullaniciParola" placeholder="Password">   
-                <button type="submit" name="btn_giris" class="aa-browse-btn">Login</button>
-	            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
-	            <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+	            <label for="">Kullanıcı Mail<span>*</span></label>
+                <input type="text" name="kullaniciMail" placeholder="Email Adresiniz...">             
+                <label for="">Parola<span>*</span></label>
+                <input type="password" name="kullaniciParola" placeholder="Şifreniz...">   
+                <button type="submit" name="btn_giris" class="aa-browse-btn">Giriş Yap</button>
+	            <label for="rememberme" class="rememberme"><input type="checkbox" id="rememberme"> Beni Hatırla </label>
+	            <p class="aa-lost-password"><a href="#">Şifreni mi unuttun?</a></p>
 	            <div class="aa-register-now">
-	              Don't have an account?<a href="account.php">Register now!</a>
+	              Hesabınız yok mu?<a href="account.php">Hemen Kayıt Ol!</a>
 	            </div>
 	          </form>
 	        </div>                        
@@ -189,54 +149,16 @@
                 <!-- Text based logo -->
                 <a href="index.php">
                   <span class="fa fa-shopping-cart"></span>
-                  <p>daily<strong>Shop</strong> <span>Your Shopping Partner</span></p>
+                  <p>sanal<strong>Pazar</strong> <span>Eğlenceli AlışVeriş</span></p>
                 </a>
-                <!-- img based logo -->
-                <!-- <a href="index.html"><img src="img/logo.jpg" alt="logo img"></a> -->
+                
               </div>
               <!-- / logo  -->
-               <!-- cart box -->
-              <div class="aa-cartbox">
-                <a class="aa-cart-link" href="#">
-                  <span class="fa fa-shopping-basket"></span>
-                  <span class="aa-cart-title">SHOPPING CART</span>
-                  <span class="aa-cart-notify">2</span>
-                </a>
-                <div class="aa-cartbox-summary">
-                  <ul>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>
-                    <li>
-                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
-                      <div class="aa-cartbox-info">
-                        <h4><a href="#">Product Name</a></h4>
-                        <p>1 x $250</p>
-                      </div>
-                      <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
-                    </li>                    
-                    <li>
-                      <span class="aa-cartbox-total-title">
-                        Total
-                      </span>
-                      <span class="aa-cartbox-total-price">
-                        $500
-                      </span>
-                    </li>
-                  </ul>
-                  <a class="aa-cartbox-checkout aa-primary-btn" href="checkout.html">Checkout</a>
-                </div>
-              </div>
-              <!-- / cart box -->
+
               <!-- search box -->
               <div class="aa-search-box">
                 <form action="">
-                  <input type="text" name="" id="" placeholder="Search here ex. 'man' ">
+                  <input type="text" name="" id="" placeholder="Aramak istediğiniz ürün veya firma...">
                   <button type="submit"><span class="fa fa-search"></span></button>
                 </form>
               </div>
