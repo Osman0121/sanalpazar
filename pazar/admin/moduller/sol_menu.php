@@ -35,7 +35,7 @@
     						<span>Anasayfa</span>
     					</a>
     				</li>
-    					<li>
+    						<li>
     							<a href="javascript:void(0);" class="menu-toggle">
     								<i class="material-icons">layers</i>
     								<span>Yetkilendirme İşlemleri</span>
@@ -68,10 +68,30 @@
     					
 
     						<li>
-    							<a href="mesajlar.php">
+    							<a href="javascript:void(0);" class="menu-toggle">
     								<i class="material-icons">message</i>
     								<span>Mesajlar</span>
     							</a>
+    							<ul class="ml-menu">
+    								<li>
+    									<a href="mesajlar.php" >
+    										<span>Gelen Kutusu</span>
+    									</a>
+    									
+    								</li>
+    								<li>
+    									<a href="admin_mesaj_gönderilen.php">
+    										<span>Gönderilen Kutusu</span>
+    									</a>
+    									
+    								</li>
+                                    <li>
+                                        <a href="admin_mesaj_yaz.php">
+                                            <span>Yeni Mesaj Oluştur</span>
+                                        </a>
+                                        
+                                    </li>
+    							</ul>
     						</li>
     						<li>
     							<a href="javascript:void(0);" class="menu-toggle">
