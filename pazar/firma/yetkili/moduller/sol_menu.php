@@ -36,6 +36,7 @@
                         </a>
                     </li>
                     
+                    
                     <li>
                      <a href="javascript:void(0);" class="menu-toggle">
                         <i class="material-icons">layers</i>
@@ -112,11 +113,31 @@
   </li>
 
 <li>
- <a href="mesajlar.php">
-    <i class="material-icons">message</i>
-    <span>Mesajlar</span>
-</a>
-</li>
+    							<a href="javascript:void(0);" class="menu-toggle">
+    								<i class="material-icons">message</i>
+    								<span>Mesajlar</span>
+    							</a>
+    							<ul class="ml-menu">
+    								<li>
+    									<a href="mesajlar.php" >
+    										<span>Gelen Kutusu</span>
+    									</a>
+    									
+    								</li>
+    								<li>
+    									<a href="yetkili_mesaj_gönderilen.php">
+    										<span>Gönderilen Kutusu</span>
+    									</a>
+    									
+    								</li>
+                                    <li>
+                                        <a href="yetkili_mesaj_yaz.php">
+                                            <span>Yeni Mesaj Oluştur</span>
+                                        </a>
+                                        
+                                    </li>
+    							</ul>
+    						</li>
 
 
 </ul>
