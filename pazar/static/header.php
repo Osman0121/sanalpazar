@@ -208,13 +208,11 @@
   <!-- / menu -->
     <!--Hakkımızda Bilgileri-->
     
-    <?php   
-      $id=$_SESSION["id"] ;
-        
+    <?php 
+        $id=1;
         $veri= $db->query("SELECT * FROM admin where adminId='$id'", PDO::FETCH_ASSOC);            
               foreach($veri as $row){  
                 $row['adminId'];
-
     ?>
 
     <!--Hakkımızda Bilgileri Bitiş-->
